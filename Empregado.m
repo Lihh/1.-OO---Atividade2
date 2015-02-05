@@ -10,7 +10,7 @@
 
 @implementation Empregado
 
--(instancetype) initWithName:(NSString *)n andSobrenome:(NSString *)so andSalario:(double)sa
+-(Empregado *) initWithNome:(NSString *)n andSobrenome:(NSString *)so andSalario:(double)sa
 {
     self = [super init];
     
@@ -33,7 +33,7 @@
 
 -(void) salarioAnual
 {
-    salario = [self verificaSalario];
+    //salario = [self verificaSalario];
     double salAnual;
     
     salAnual = (salario * 12);
@@ -47,10 +47,10 @@
     salario = [self verificaSalario];
     double porcentagem = 10;
     
-    salario = salario * 10;
+    salario = salario * 1.1;
     
     NSLog (@"Nome do empregado(a): %@ %@", nome, sobrenome);
-    NSLog (@"Recebeu aumento de: %f %", porcentagem);
+    NSLog (@"Recebeu aumento (em porcentagem) de: %f", porcentagem);
     NSLog (@"Salario atual: %f", salario);
     
 }

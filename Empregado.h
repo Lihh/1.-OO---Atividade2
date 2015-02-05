@@ -20,7 +20,7 @@
 @property NSString *sobrenome;
 @property double salario;
 
--(instancetype) initWithName:(NSString *)n andSobrenome:(NSString *)so andSalario:(double)sa;
+-(Empregado *) initWithNome:(NSString *)n andSobrenome:(NSString *)so andSalario:(double)sa;
 
 -(double) verificaSalario;
 -(void) salarioAnual;

@@ -12,8 +12,11 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        Empregado *emp1 = [[Empregado alloc]initWithNome:@"Joao" andSobrenome:@"Silva" andSalario:2500.00];
-        Empregado *emp2 = [[Empregado alloc]initWithNome:@"Maria" andSobrenome:@"Oliveira" andSalario:2700.00];
+        Empregado *emp1 = [[Empregado alloc]initWithNome:@"Joao" andSobrenome:@"Silva" andSalario:2500.0];
+        Empregado *emp2 = [[Empregado alloc]initWithNome:@"Maria" andSobrenome:@"Oliveira" andSalario:2700.0];
+        
+        [emp1 verificaSalario];
+        [emp2 verificaSalario];
         
         [emp1 salarioAnual];
         [emp2 salarioAnual];
